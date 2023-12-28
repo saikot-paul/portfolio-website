@@ -44,8 +44,9 @@ const AboutMe = () => {
             <p className="text-lg mb-2">
               My journey into the world of tech began with a spark of curiosity,
               through a conversation with a calculus tutor of mine. He spoke
-              about his work with a startup, specifically using positional
-              information to calculate the speed of a car. It&#39;s this kind of
+              about his work with a startup, specifically calculating the
+              derivative of the positional information to get the speed of a
+              car, for autonomous driving applications. It&#39;s this kind of
               innovation and problem-solving that drives me, I was sold from
               that moment.
             </p>
