@@ -5,10 +5,10 @@ type projectType = {
     language: string[];
     name: string;
     readme: string;
-  };
+};
 
-  export const summarizeReadMe = async (element: projectType) => {
-    
+export const summarizeReadMe = async (element: projectType) => {
+
     const cohereToken = process.env.COHERE_TOKEN;
     const cohereVersion = '2021-11-08';
     const message = `Here's the README for my ${element.name} project: ${element.readme}. Please provide a summary in first person, focusing on the key features, implementation details, and technologies used. The summary should be concise, 150 words maximum, and highlight the project's most important aspects and similar to those you sent before. Thank you.`;
@@ -21,6 +21,7 @@ type projectType = {
         connectors: [],
         documents: []
     }
+    
 
     axios.post('https://api.cohere.ai/chat', postData, { 
         headers : { 
