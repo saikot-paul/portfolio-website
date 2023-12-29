@@ -8,7 +8,6 @@ interface skill {
 const languages: skill[] = [
   { skill: "Python" },
   { skill: "Java" },
-  { skill: "SQL" },
   { skill: "JavaScript/TypeScript" },
   { skill: "HTML/CSS" },
   { skill: "SQL" },
@@ -23,12 +22,16 @@ const frameworks: skill[] = [
 ];
 const mlds: skill[] = [
   { skill: "TensorFlow" },
-  { skill: "Keras" },
   { skill: "ScikitLearn" },
+  { skill: "Pandas" },
   { skill: "Numpy" },
   { skill: "Matplotlib" },
 ];
-const tools: skill[] = [{ skill: "Git" }, { skill: "VS Code" }];
+const tools: skill[] = [
+  { skill: "Git" },
+  { skill: "Docker" },
+  { skill: "VS Code" },
+];
 
 const AboutMe = () => {
   return (
@@ -38,17 +41,17 @@ const AboutMe = () => {
           Who is Saikot?
           <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></hr>
         </h1>
-        <div className="flex flex-col md:flex-row justify-center items-center">
+        <div className="flex flex-col md:flex-row justify-center align-top">
           <div className="flex flex-col my-2 px-4 md:w-1/3 w-full">
             <h2 className="text-2xl font-bold mb-3">About me</h2>
             <p className="text-lg mb-2">
-              My journey into the world of tech began with a spark of curiosity,
-              through a conversation with a calculus tutor of mine. He spoke
-              about his work with a startup, specifically calculating the
-              derivative of the positional information to get the speed of a
-              car, for autonomous driving applications. It&#39;s this kind of
-              innovation and problem-solving that drives me, I was sold from
-              that moment.
+              My journey into the world of programming began with a spark of
+              curiosity, through a conversation with a calculus tutor of mine.
+              He spoke about his work, where he was writing a program to
+              calculate the derivative of the positional information. In order,
+              to get the speed of a car, for autonomous driving applications.
+              It&#39;s this kind of innovation and problem-solving that drives
+              me, I was sold from that moment.
             </p>
             <p className="text-lg mb-2">
               Outside of the tech world, I&#39;m passionate about rock climbing

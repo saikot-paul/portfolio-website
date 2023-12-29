@@ -11,7 +11,7 @@ interface props {
 export const SkillHelper = ({ skills }: props) => {
   return (
     <>
-      <div className="flex flex-wrap">
+      <div className="flex md:flex-wrap items-center ">
         {skills.map((item, idx) => {
           return (
             <p
