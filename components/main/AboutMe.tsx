@@ -1,37 +1,10 @@
 import React from "react";
 import { SkillHelper } from "./SkillHelper";
+import { languages, frameworks, mlds, tools } from "./skillData";
 
 interface skill {
   skill: string;
 }
-
-const languages: skill[] = [
-  { skill: "Python" },
-  { skill: "Java" },
-  { skill: "JavaScript/TypeScript" },
-  { skill: "HTML/CSS" },
-  { skill: "SQL" },
-  { skill: "Hive" },
-  { skill: "Bash/Shell" },
-];
-const frameworks: skill[] = [
-  { skill: "React.js" },
-  { skill: "Express.js" },
-  { skill: "Node.js" },
-  { skill: "Next.js" },
-];
-const mlds: skill[] = [
-  { skill: "TensorFlow" },
-  { skill: "ScikitLearn" },
-  { skill: "Pandas" },
-  { skill: "Numpy" },
-  { skill: "Matplotlib" },
-];
-const tools: skill[] = [
-  { skill: "Git" },
-  { skill: "Docker" },
-  { skill: "VS Code" },
-];
 
 const AboutMe = () => {
   return (
@@ -43,8 +16,8 @@ const AboutMe = () => {
         </h1>
         <div className="flex flex-col md:flex-row justify-center align-top">
           <div className="flex flex-col my-2 px-4 md:w-1/3 w-full">
-            <h2 className="text-2xl font-bold mb-3">About me</h2>
-            <p className="text-lg mb-2">
+            <h2 className="text-2xl font-bold mb-3 text-center">About me</h2>
+            <p className="text-lg mb-2 text-wrap md:text-justify">
               My journey into the world of programming began with a spark of
               curiosity, through a conversation with a calculus tutor of mine.
               He spoke about his work, where he was writing a program to
@@ -53,7 +26,7 @@ const AboutMe = () => {
               It&#39;s this kind of innovation and problem-solving that drives
               me, I was sold from that moment.
             </p>
-            <p className="text-lg mb-2">
+            <p className="text-lg mb-2 text-wrap md:text-justify">
               Outside of the tech world, I&#39;m passionate about rock climbing
               and kickboxing. Rock climbing is like solving puzzles on the wall,
               customizing solutions to myself, while kickboxing taps into my
@@ -62,22 +35,24 @@ const AboutMe = () => {
               my limits and adding an exciting element of risk.
             </p>
           </div>
-          <div className="flex flex-col my-2 px-4 md:w-1/3 w-full">
-            <h2 className="text-2xl font-bold mb-3">My Skills</h2>
+          <div className="flex flex-col justify-center my-2 px-4 md:w-1/3 w-full">
+            <h2 className="text-2xl font-bold mb-3 text-center">My Skills</h2>
             <div className="mb-2">
-              <div className="text-lg">Languages</div>
+              <div className="text-lg text-center">Languages</div>
               <SkillHelper skills={languages}></SkillHelper>
             </div>
             <div className="mb-2">
-              <div className="text-lg">Frameworks</div>
+              <div className="text-lg text-center">Frameworks</div>
               <SkillHelper skills={frameworks}></SkillHelper>
             </div>
             <div className="mb-2">
-              <div className="text-lg">Machine Learning/Data Science</div>
+              <div className="text-lg text-center">
+                Machine Learning/Data Science
+              </div>
               <SkillHelper skills={mlds}></SkillHelper>
             </div>
             <div className="mb-2">
-              <div className="text-lg">Tools</div>
+              <div className="text-lg text-center">Tools</div>
               <SkillHelper skills={tools}></SkillHelper>
             </div>
           </div>
