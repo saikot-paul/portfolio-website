@@ -19,7 +19,7 @@ const NavBar = () => {
   const defaultOffset = 80;
 
   return (
-    <header className="mx-auto px-20 py-5 border-b w-full h-full border-gray-50 sticky top-0 z-50 bg-black">
+    <header className="px-20 py-5 border-b w-full h-full border-gray-50 sticky top-0 z-50 bg-black">
       <div className="flex justify-between items-center">
         <div>
           <a

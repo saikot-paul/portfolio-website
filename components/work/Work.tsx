@@ -11,7 +11,7 @@ const Work = () => {
           Work Experience
           <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></hr>
         </h1>
-        <div className="flex justify-center itemcs-center w-3/5">
+        <div className="flex justify-center items-center md:w-3/5 w-full">
           <ol className="relative border-s border-gray-200 dark:border-white-700">
             {workExperience.map((element: experienceType) => {
               return (
