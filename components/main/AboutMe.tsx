@@ -9,7 +9,7 @@ interface skill {
 const AboutMe = () => {
   return (
     <section id="about">
-      <div className="flex flex-col items-center justify-center items-center">
+      <div className="flex flex-col justify-center items-center">
         <h1 className="text-3xl font-bold my-6">
           Who is Saikot?
           <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></hr>

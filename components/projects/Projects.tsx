@@ -1,5 +1,5 @@
 import React from "react";
-import ProjectHelper from "./ProjectHelper";
+import { ProjectHelper } from "./ProjectHelper";
 import { projectData } from "./projectData";
 import { projectType } from "./projectType";
 
