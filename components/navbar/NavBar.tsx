@@ -1,54 +1,76 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
+import { IoMdMenu, IoMdClose } from "react-icons/io";
 
 const NavBar = () => {
-  const scrollToSection =
-    (sectionId: string, offset: number) =>
-    (e: { preventDefault: () => void }) => {
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
+  const scrollToSection = (sectionId: string, offset = 90) => {
+    return (e: { preventDefault: () => void }) => {
       e.preventDefault();
       const section = document.getElementById(sectionId);
 
       if (section) {
+        offset = isNavOpen ? 150 : 100;
         const sectionTop =
           section.getBoundingClientRect().top + window.scrollY - offset;
-        window.scrollTo({ top: sectionTop, behavior: "smooth" });
+        window.scrollTo({
+          top: sectionTop,
+          behavior: "smooth",
+        });
+        setIsNavOpen(false); 
       }
     };
-
-  const defaultOffset = 80;
+  };
 
   return (
     <header className="px-20 py-5 border-b w-full h-full border-gray-50 sticky top-0 z-50 bg-black">
-      <div className="flex justify-between space-x-2 items-center">
-        <div>
-          <a
-            className="text-2xl md:text-3xl font-bold align-text-bottom text-full"
-            onClick={scrollToSection("home", defaultOffset)}
+      <div className="px-4 sm:px-20 mx-auto flex justify-between items-center py-3 md:py-5">
+        <a
+          onClick={scrollToSection("home")}
+          className="cursor-pointer text-2xl font-bold"
+        >
+          Saikot Paul
+        </a>
+        <div className="md:hidden">
+          <button
+            className="p-2 text-gray-700 rounded-md focus:outline-none"
+            onClick={() => setIsNavOpen(!isNavOpen)}
           >
-            Saikot Paul
-          </a>
+            {isNavOpen ? <IoMdClose size={30} /> : <IoMdMenu size={30} />}
+          </button>
         </div>
-        <div className="flex space-x-1 md:space-x-4 text-sm md:text-lg">
-          <a href="#home" onClick={scrollToSection("home", defaultOffset)}>
-            Home
-          </a>
-          <a href="#about" onClick={scrollToSection("about", defaultOffset)}>
-            About
-          </a>
-          <a
-            href="#experience"
-            onClick={scrollToSection("experience", defaultOffset)}
-          >
-            Experience
-          </a>
-          <a
-            href="#projects"
-            onClick={scrollToSection("projects", defaultOffset)}
-          >
-            Projects
-          </a>
-        </div>
+        <nav className={`${isNavOpen ? "block" : "hidden"} md:flex`}>
+          <ul className="md:flex md:space-x-6">
+            <li>
+              <a onClick={scrollToSection("home")} className="cursor-pointer">
+                Home
+              </a>
+            </li>
+            <li>
+              <a onClick={scrollToSection("about")} className="cursor-pointer">
+                About Me
+              </a>
+            </li>
+            <li>
+              <a
+                onClick={scrollToSection("experience")}
+                className="cursor-pointer"
+              >
+                Experience
+              </a>
+            </li>
+            <li>
+              <a
+                onClick={scrollToSection("projects")}
+                className="cursor-pointer"
+              >
+                Projects
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
   );

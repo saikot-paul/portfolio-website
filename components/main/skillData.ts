@@ -20,6 +20,8 @@ export  const frameworks: skill[] = [
   ];
 export  const mlds: skill[] = [
     { skill: "TensorFlow" },
+    { skill: "Langchain" },
+    { skill: "PyTorch" },
     { skill: "ScikitLearn" },
     { skill: "Pandas" },
     { skill: "Numpy" },

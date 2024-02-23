@@ -15,11 +15,11 @@ const AboutMe = () => {
           <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></hr>
         </h1>
         <div className="flex flex-col justify-center items-center md:w-full">
-          <div className="flex flex-col my-2 px-4 w-full items-center">
+          <div className="flex flex-col my-2 px-4 md:w-3/5 items-center">
             <h2 className="text-2xl font-bold mb-3 text-center">About me</h2>
             <p className="text-lg mb-2 text-wrap md:text-justify">
               My journey into the world of programming began with a spark of
-              curiosity, through a conversation with a calculus tutor of mine.
+              curiousity, through a conversation with a calculus tutor of mine.
               He spoke about his work, where he was writing a program to
               calculate the derivative of the positional information. In order,
               to get the speed of a car, for autonomous driving applications.
@@ -27,12 +27,17 @@ const AboutMe = () => {
               me, I was sold from that moment.
             </p>
             <p className="text-lg mb-2 text-wrap md:text-justify">
-              Outside of the tech world, I&#39;m passionate about rock climbing
-              and kickboxing. Rock climbing is like solving puzzles on the wall,
-              customizing solutions to myself, while kickboxing taps into my
-              past experiences in karate and the strategy of adapting to
-              opponents. Both hobbies offer mental and physical growth, pushing
-              my limits and adding an exciting element of risk.
+              Outside of the tech world, I love doing all things physical.
+              I&#39;ve always been drawn to activities that challenge both the
+              body and mind. Martial arts, particularly Muay Thai, and rock
+              climbing (strictly a boulder bro) are where I find this balance.
+              In Muay Thai, the strategic aspect is crucial; it&#39;s about
+              tailoring your approach to leverage your strengths against an
+              opponent&#39;s weaknesses. Similarly, rock climbing demands
+              innovative problem-solving, as each route presents unique
+              obstacles that require tailored solutions based on your abilities.
+              Both hobbies offer a dynamic blend of physical engagement and
+              mental strategy.
             </p>
           </div>
           <div className="flex flex-col justify-center my-2 px-4 md:w-1/3 w-full">
