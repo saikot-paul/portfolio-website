@@ -6,7 +6,7 @@ export const workExperience : experienceType[] = [
         position : 'Research Assistant', 
         location : 'Toronto, ON', 
         dates : 'Oct. 2023 - Present', 
-        description : 'Developing text visualization tools, focusing on clustering text, extracting sentiment, and generating labels from textual data.'
+        description : 'Prototyped a tool by implementing sentence transformers, clustering algorithms and Large Language Models to automate the process of text analysis.'
     },
     { 
         company : 'Manulife', 

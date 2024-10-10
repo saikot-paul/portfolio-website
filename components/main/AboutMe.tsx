@@ -18,26 +18,46 @@ const AboutMe = () => {
           <div className="flex flex-col my-2 px-4 md:w-3/5 items-center">
             <h2 className="text-2xl font-bold mb-3 text-center">About me</h2>
             <p className="text-lg mb-2 text-wrap md:text-justify">
-              My journey into the world of programming began with a spark of
-              curiousity, through a conversation with a calculus tutor of mine.
-              He spoke about his work, where he was writing a program to
-              calculate the derivative of the positional information. In order,
-              to get the speed of a car, for autonomous driving applications.
-              It&#39;s this kind of innovation and problem-solving that drives
-              me, I was sold from that moment.
+              My introduction into the industry started with a conversation with
+              a calculus tutor of mine. He advised me that to build AI
+              applications I should study electrical engineering. After my first
+              year, I discovered that my abilities were more suited for
+              hardware/software development so I pivoted to computer engineering
+              while still honing my skills in machine learning and software
+              engineering. Which leads me to where I am now, an individual
+              motivated to deliver AI powered solutions.
             </p>
             <p className="text-lg mb-2 text-wrap md:text-justify">
-              Outside of the tech world, I love doing all things physical.
-              I&#39;ve always been drawn to activities that challenge both the
-              body and mind. Martial arts, particularly Muay Thai, and rock
-              climbing (strictly a boulder bro) are where I find this balance.
-              In Muay Thai, the strategic aspect is crucial; it&#39;s about
-              tailoring your approach to leverage your strengths against an
-              opponent&#39;s weaknesses. Similarly, rock climbing demands
-              innovative problem-solving, as each route presents unique
-              obstacles that require tailored solutions based on your abilities.
-              Both hobbies offer a dynamic blend of physical engagement and
-              mental strategy.
+              During my time outside of work, I enjoy learning. Right now I am
+              reading through Advanced Portfolio Management A Quant’s Guide for
+              Fundamental Investors - Giuseppe A. Paleologo. Coming from an
+              engineering background it is somewhat of a hard read but I really
+              like learning about new fields. As I read through the textbook I
+              try to use the concepts learned to build modules with the end goal
+              to build a{" "}
+              <em>
+                <a href="https://github.com/saikot-paul/portfolio-optimization">
+                  <u>financial analysis tool</u>
+                </a>
+              </em>
+              .
+            </p>
+            <p className="text-lg mb-2 text-wrap md:text-justify">
+              Aside from that I like to stay fit whether it be through the gym,
+              rock climbing or martial arts. I enjoy bouldering, the max grading
+              I have climbed so far is a V3, so not that good yet. I started
+              doing Karate when I was 4 and{" "}
+              <em>
+                <a href="https://www.youtube.com/watch?v=jP29HpHTytM&t=88s">
+                  <u>competed internationally </u>
+                </a>
+              </em>
+              from 16-18. I had to take a hiatus from training since I got busy
+              with school, but recently transitioned over into Kickboxing/Muay
+              Thai. The transition has been really smooth, and I have got to say
+              that there is much more freedom in strategy and techniques. Both
+              sports require strategies that play to my strengths but also tuned
+              to the current problem.
             </p>
           </div>
           <div className="flex flex-col justify-center my-2 px-4 md:w-1/3 w-full">
