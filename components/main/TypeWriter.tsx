@@ -32,7 +32,7 @@ export const Typewriter = ({ text, delay, className }: Props) => {
   return (
     <div
       className={className}
-      style={{ whiteSpace: "pre-wrap", height: "3rem" }}
+      style={{ whiteSpace: "pre-wrap", height: "2rem" }}
     >
       {currentText}
     </div>

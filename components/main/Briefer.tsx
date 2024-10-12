@@ -17,7 +17,7 @@ const Briefer = () => {
         </div>
         <div className="my-10 md:w-1/3 w-3.5/10">
           <Typewriter
-            className="text-3xl font-bold md:text-start text-center"
+            className="text-2xl font-bold md:text-start text-center"
             delay={100}
             text="Hi, I&#39;m Saikot 👋"
           ></Typewriter>
