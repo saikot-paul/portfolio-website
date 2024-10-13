@@ -1,4 +1,3 @@
-# Purpose
+I wanted to gain experience with hosting a Next.js application in a Dockerized environment and learn more about cloud infrastructure. So I built a website using Next.js, Docker, and AWS services, including Route 53 and Cloudflare for SSL configuration.
 
-Decided I wanted to learn how to use Next.js and Tailwind framework so I used it to build a portfolio website for myself. Next steps are to deploy, have already created a docker image for this so I just need to find a good container hosting service and deploy from there. 
-
+Visit my site: [saikotpaul.com]
