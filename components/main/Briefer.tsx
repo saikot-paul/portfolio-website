@@ -22,9 +22,34 @@ const Briefer = () => {
             text="Hi, I&#39;m Saikot 👋"
           ></Typewriter>
           <div className="text-lg my-2 text-wrap md:text-left">
-            I am a 4th-year Computer Engineering student at TMU with a year of
-            professional experience, I specialize in full stack development and
-            machine learning.
+            <p className="my-2">
+              I am a 4th-year Computer Engineering student at TMU with a year of
+              professional experience, I specialize in full stack development
+              and machine learning.
+            </p>
+            <p className="my-2">
+              Get to know{" "}
+              <em>
+                <a href="/about">
+                  <u>
+                    <strong>here</strong>
+                  </u>
+                </a>
+              </em>
+              {""}
+              !.
+            </p>
+            <p className="my-2">
+              Check out some cool{" "}
+              <em>
+                <a href="/projects">
+                  <u>
+                    <strong>projects</strong>
+                  </u>
+                </a>
+              </em>
+              I have worked on.
+            </p>
           </div>
         </div>
       </div>
