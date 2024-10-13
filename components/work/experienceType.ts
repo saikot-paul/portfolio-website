@@ -3,5 +3,7 @@ export interface experienceType {
     position : string; 
     location : string; 
     dates : string; 
+    link?: string;
+    link_text?: string;
     description? : string; 
 }

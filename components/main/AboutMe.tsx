@@ -31,10 +31,9 @@ const AboutMe = () => {
               During my time outside of work, I enjoy learning. Right now I am
               reading through Advanced Portfolio Management A Quant’s Guide for
               Fundamental Investors - Giuseppe A. Paleologo. Coming from an
-              engineering background it is somewhat of a hard read but I really
-              like learning about new fields. As I read through the textbook I
-              try to use the concepts learned to build modules with the end goal
-              to build a{" "}
+              engineering background it is somewhat of a hard read but I enjoy
+              overcoming challenges. As I read through the textbook I try to use
+              the concepts learned to build modules with the end goal to build a{" "}
               <em>
                 <a
                   href="https://github.com/saikot-paul/portfolio-optimization"
@@ -64,10 +63,10 @@ const AboutMe = () => {
                 </a>
               </em>{" "}
               from the ages of 16-18. I had to take a hiatus from training since
-              I got busy with school, but recently transitioned over into
-              Kickboxing and Muay Thai. The transition has been really smooth,
-              and I have got to say that there is much more freedom in strategy
-              and techniques. Both sports require strategies that play to my
+              I got busy with school, but recently switched over into Kickboxing
+              and Muay Thai. The transition has been really smooth, and I have
+              got to say that there is much more freedom in strategy and
+              techniques. Both sports require strategies that play to my
               strengths but also tuned to the current problem.
             </p>
           </div>

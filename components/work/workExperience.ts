@@ -6,7 +6,9 @@ export const workExperience : experienceType[] = [
         position : 'Research Assistant', 
         location : 'Toronto, ON', 
         dates : 'Oct. 2023 - Present', 
-        description : 'Prototyped a tool by implementing sentence transformers, clustering algorithms and Large Language Models to automate the process of text analysis.'
+        description : 'Prototyped a topic analysis tool by implementing sentence transformers, clustering algorithms and Large Language Models to automate the process of text analysis.',
+        link: "https://socialmedialab.ca/2024/09/18/introducing-the-new-3d-topic-analyzer-module-in-communalytic/",
+        link_text: "Learn More"
     },
     { 
         company : 'Manulife', 

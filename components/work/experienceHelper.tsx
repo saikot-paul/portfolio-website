@@ -6,6 +6,8 @@ const ExperienceHelper = ({
   company,
   position,
   description,
+  link,
+  link_text,
 }: experienceType) => {
   return (
     <li key={dates} className="mb-10 ms-4">
@@ -19,6 +21,16 @@ const ExperienceHelper = ({
       <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 text-wrap">
         {description}
       </p>
+      {link && (
+        <a
+          href={link}
+          className="text-blue-500 hover:underline dark:text-blue-300"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {link_text || "Learn more"}
+        </a>
+      )}
     </li>
   );
 };
