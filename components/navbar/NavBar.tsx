@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React, { useState } from "react";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 
@@ -19,7 +20,7 @@ const NavBar = () => {
           top: sectionTop,
           behavior: "smooth",
         });
-        setIsNavOpen(false); 
+        setIsNavOpen(false);
       }
     };
   };
@@ -44,30 +45,19 @@ const NavBar = () => {
         <nav className={`${isNavOpen ? "block" : "hidden"} md:flex`}>
           <ul className="md:flex md:space-x-6">
             <li>
-              <a onClick={scrollToSection("home")} className="cursor-pointer">
+              <Link href={"/"} className="text-xl">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a onClick={scrollToSection("about")} className="cursor-pointer">
-                About Me
-              </a>
+              <Link href={"/about"} className="text-xl">
+                About
+              </Link>
             </li>
             <li>
-              <a
-                onClick={scrollToSection("experience")}
-                className="cursor-pointer"
-              >
-                Experience
-              </a>
-            </li>
-            <li>
-              <a
-                onClick={scrollToSection("projects")}
-                className="cursor-pointer"
-              >
+              <Link href={"/projects"} className="text-xl">
                 Projects
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
