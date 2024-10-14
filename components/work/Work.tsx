@@ -41,7 +41,7 @@ const Work = () => {
             SWE Experience
           </button>
         </div>
-        <div className="flex justify-center text-wrap items-start md:w-3/5 w-full">
+        <div className="flex justify-center text-wrap items-center md:w-3/5">
           <ol
             className={`relative border-s border-gray-200 dark:border-white-700 w-full flex flex-col items-center transition-all opacity-100`}
           >
