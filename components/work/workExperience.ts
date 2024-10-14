@@ -1,25 +1,49 @@
 import { experienceType } from "./experienceType";
 
-export const workExperience : experienceType[] = [ 
-    { 
-        company : 'Social Media Lab', 
-        position : 'Research Assistant', 
-        location : 'Toronto, ON', 
-        dates : 'Oct. 2023 - Present', 
-        description : 'Developing text visualization tools, focusing on clustering text, extracting sentiment, and generating labels from textual data.'
+export const sweExperience: experienceType[] = [
+    {
+        company: "TENAMINT",
+        position: "Full Stack Engineer",
+        location: "Toronto, Ontario",
+        dates: "September 2024 - Present",
+        description: "Optimized backend services by implementing a unique document ID system for a NoSQL Firebase database, improving search time by 50%. Created dynamic frontend components using React.js and Tailwind."
     },
-    { 
-        company : 'Manulife', 
-        position : 'Data Scientist', 
-        location : 'Toronto, ON', 
-        dates : 'Sept. 2022 - Dec. 2022', 
-        description : 'Created models for fraud detection and automated job executions using shell scripts, streamlining the process and enhancing operational efficiency.'
+    {
+        company: "Knorket.ai",
+        position: "Full Stack Engineer",
+        location: "Waterloo, Ontario",
+        dates: "December 2023 - January 2024",
+        description: "Built a web-based analytics tool to perform automatic machine learning and detecting data drift. Built frontend with React.js/TypeScript and backend with FastAPI."
+    }
+];
+
+export const mlExperience: experienceType[] = [
+    {
+        company: "EPILOID Biotechnology",
+        position: "Machine Learning Engineer",
+        location: "Toronto, Ontario",
+        dates: "September 2024 - Present",
+        description: "Developed classification models for drug activity, improved performance through feature engineering, and statistical testing."
     },
-    { 
-        company : 'Toronto Metropolitan University', 
-        position : 'Undergraduate Research Assistant', 
-        location : 'Toronto, ON', 
-        dates : 'May 2022 - August 2022', 
-        description : 'Led development and deployment of image-based sensor nodes, including assembly, calibration, and advanced programming, using Edge Impulse for machine learning algorithms on microprocessors.'
+    {
+        company: "Social Media Lab",
+        position: "Research Assistant",
+        location: "Toronto, Ontario",
+        dates: "September 2023 - Present",
+        description: "Prototyped an automated topic visualization and analysis tool, using text embedding models, clustering models and Large Language Models for labelling."
     },
-]
+    {
+        company: "Manulife",
+        position: "Data Scientist",
+        location: "Waterloo, Ontario",
+        dates: "September 2022 - December 2022",
+        description: "Developed machine learning algorithms for fraud classification and provided production support by developing automation scripts and reducing run times of queries."
+    },
+    {
+        company: "Toronto Metropolitan University",
+        position: "Undergraduate Research Assistant",
+        location: "Toronto, Ontario",
+        dates: "May 2022 - August 2022",
+        description: "Developed and deployed computer vision models to identify 'flushables' on microprocessors in sewage systems."
+    }
+];
